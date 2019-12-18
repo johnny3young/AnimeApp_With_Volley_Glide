@@ -47,11 +47,9 @@ class RecyclerViewAdapter(private val mContext: Context, private val mData: List
         // Load Image from the internet and set it into Imageview using Glide
         Glide.with(mContext).load(mData[position].image_url).apply(option).into(holder.img_thumbnail)
     }
-
     override fun getItemCount(): Int {
         return mData.size
     }
-
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tv_name: TextView
         var tv_rating: TextView
@@ -69,7 +67,6 @@ class RecyclerViewAdapter(private val mContext: Context, private val mData: List
             img_thumbnail = itemView.findViewById(R.id.thumbnail)
         }
     }
-
     init {
         // Request option for Glide
         option = RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(
