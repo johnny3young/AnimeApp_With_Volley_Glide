@@ -14,7 +14,7 @@ class AnimeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anime)
         // hide the default actionbar
-        supportActionBar?.show()
+        supportActionBar?.hide()
         // Recieve data
         val name = intent.extras?.getString("anime_name")
         val description = intent.extras?.getString("anime_description")
