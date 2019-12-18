@@ -39,5 +39,6 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.0'
     // Recyclerview Library
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    //Design
     implementation 'com.google.android.material:material:1.0.0'
 }
